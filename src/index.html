@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- displays site properly based on user's device -->
+
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+	<link rel="stylesheet" href="./site.css">
+
+    <script src="./site.js"></script>
+
+	<title>Rock, Paper, Scissors</title>
+</head>
+
+<body>
+	<div class="App">
+		<div class='container'>
+			<header class='Header'>
+				<img src="./images/logo.svg" class='logo' alt='logo' />
+				<div class='score-container'>
+					<p class='score-text'>SCORE</p>
+					<p id="score" class='score-value'>12</p>
+				</div>
+			</header>
+
+		</div>
+		<div class="title">
+			<p class="player-pick">YOU PICKED</p>
+			<p class="house-pick">THE HOUSE PICKED</p>
+		</div>
+		<div class='options-container'>
+			<div class="option-wrapper">
+					<div id="paper" class='option paper'>
+						<div><img src="./images/icon-paper.svg" class='logo' alt='Paper' /></div>
+					</div>
+			</div>
+			<div class="option-wrapper">
+					<div id="scissors" class='option scissors'>
+						<div><img src="./images/icon-scissors.svg" class='logo' alt='scissors' /></div>
+					</div>
+			</div>
+			<div class="option-wrapper">
+					<div id="rock" class='option rock'>
+						<div><img src="./images/icon-rock.svg" class='logo' alt='Rock' /></div>
+					</div>
+			</div>
+
+			<div style="visibility: hidden;" id="results-container" class="results-container">
+				<div class="result-wrapper">
+						<div id="player-choice" class='result player'>
+							<div><img src="./images/icon-paper.svg" class='logo' alt='Paper' /></div>
+						</div>
+				</div>
+				<div id="house-choice" class='house'>
+					<div> <img src="./images/icon-rock.svg" alt="Computer Choice"> </div>
+				</div>	
+
+				<div id="play-again" class="play-again">
+					<p id="text-result">YOU LOSE</p>
+					<div id="play-again-button" class="play-again-button">PLAY AGAIN</div>
+				</div>		
+			</div>
+
+
+		</div>
+
+		<div class="modal-rules">
+			RULES
+		</div>
+	</div>
+
+	<div class="background-modal">
+	</div>
+
+	<div class="modal-container">
+        <div class="modal">
+            <h3>RULES</h3>
+            <img class="close" src="./images/icon-close.svg" alt="close">
+            <div class="rule-container">
+                <img class="rules" src="./images/image-rules.svg" alt="RULES">
+            </div>
+        </div>
+
+	</div>
+
+</body>
+
+</html>
